@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><div><button onclick="left()" style="display: inline-block"><img src="17.jpg" height="40"></button>
+<div id="time" style="background:yellow;color :blue ; display:inline-block;font-size :45px;font-weight :bold;width: 100px">0</div>
+    <button onclick="right()"><img src="16.jpg" height="40"></button></div>
+</center>
+<script>
+    i=0
+    function left() {
+        i--
+        if (i<0) i=0
+        document.getElementById('time').innerHTML=i
+            }
+            function right() {
+                i++
+                if (i>5) i=5
+                document.getElementById("time").innerHTML=i
+            }
+</script>
+</body>
+</html>
